@@ -82,5 +82,60 @@ public class LinkedLists {
 		}	
 		return sum;
 	}
+	
+
+	public static class ListNode {
+		int val;
+		ListNode next;
+
+		ListNode() {
+		}
+
+		ListNode(int val) {
+			this.val = val;
+		}
+
+		ListNode(int val, ListNode next) {
+			this.val = val;
+			this.next = next;
+		}
+	}
+
+	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+
+		int val1 = val(l1);
+		int val2 = val(l2);
+
+		int sum = val1 + val2;
+		System.out.println(sum);
+		ListNode previous = null;
+		ListNode head = null;
+		while (sum > 0) {
+			int rightDigit = sum % 10;
+			ListNode n = new ListNode(rightDigit);
+			sum = sum / 10;
+			if (previous != null) {
+				previous.next = n;
+			} else {
+				head = n;
+			}
+			previous = n;
+		}
+		return head;
+
+	}
+
+	public int val(ListNode l) {
+		ListNode pointer = l;
+		int multiply = 1;
+		int val = pointer.val * multiply;
+		while (pointer.next != null) {
+			pointer = pointer.next;
+			multiply *= 10;
+			val += pointer.val * multiply;
+		}
+		return val;
+	}
+
 
 }
