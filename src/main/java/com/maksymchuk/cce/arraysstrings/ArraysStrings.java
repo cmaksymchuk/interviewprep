@@ -1,13 +1,23 @@
 package com.maksymchuk.cce.arraysstrings;
 
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class ArraysStrings {
 
-	public boolean isUnique(String string) {
+	public boolean isUnique2(String string) {
+		
+		Map<String, Long> map = string.codePoints().mapToObj(c -> String.valueOf(c)).collect(Collectors.groupingBy(
+				Function.identity(), Collectors.counting()));
+		
+		return !map.values().stream().anyMatch(l -> l > 1);
+		
+	}
+	
+	public boolean isUnique1(String string) {
 		boolean isUnique = true;
 		Set<Character> map = new HashSet<Character>();
 		for (int i = 0; i < string.length(); i++)

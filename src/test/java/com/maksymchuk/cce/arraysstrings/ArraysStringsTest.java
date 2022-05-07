@@ -3,6 +3,8 @@ package com.maksymchuk.cce.arraysstrings;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.TreeMap;
+
 import org.junit.jupiter.api.Test;
 
 public class ArraysStringsTest {
@@ -11,15 +13,16 @@ public class ArraysStringsTest {
 	@Test 
 	public void testIsUnique()
 	{
-		assertTrue(arraysStrings.isUnique("abcd"));
-		assertFalse(arraysStrings.isUnique("abcdea"));
+		assertTrue(arraysStrings.isUnique1("abcd"));
+		assertFalse(arraysStrings.isUnique1("abcdea"));		
 		
 	}
 	
-	@Test public void isPermutation(String s)
+	@Test 
+	public void testIsUnique2()
 	{
-//		assertTrue(arraysStrings.isPermutation("abcd","bacd"));
-//		assertFalse(arraysStrings.isPermutation("abcdea","abcdef"));
+		assertTrue(arraysStrings.isUnique2("abcd"));
+		assertFalse(arraysStrings.isUnique2("abcdea"));
 		
 	}
 }

@@ -16,6 +16,7 @@ public class SpaceShipApp {
 		ss.moveForward();
 		System.out.println(getCoordsString(ss));		
 	}
+	
 	public void decrease()
 	{
 		ss.changeSpeed(-1);

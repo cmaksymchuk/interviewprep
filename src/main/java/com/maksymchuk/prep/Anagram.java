@@ -11,8 +11,7 @@ public class Anagram {
 			rtrn = mapsEqual(map(string1), map(string2)); 
 		}
 		
-		return rtrn;
-		
+		return rtrn;		
 	}
 	
 	public Map<Character, Integer> map(String string)

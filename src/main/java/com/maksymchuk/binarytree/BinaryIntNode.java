@@ -1,12 +1,12 @@
 package com.maksymchuk.binarytree;
 
-public class BinarIntNode {
+public class BinaryIntNode {
 	int value;
-	BinarIntNode left;
-	BinarIntNode right;
+	BinaryIntNode left;
+	BinaryIntNode right;
 	
 	
-	public BinarIntNode(int value) {
+	public BinaryIntNode(int value) {
 		this.value = value;	
 	}
 	

@@ -5,5 +5,8 @@ https://leetcode.com/discuss/interview-question/1553514/shopify-or-phone-intervi
 https://leetcode.com/discuss/interview-question/985908/Amazon-or-OA-2020-or-Shopkeeper-Sale
 
 
+https://www.reddit.com/r/learnpython/comments/tz8q2w/designing_a_pizza_resturant_inheriting_from_an/
+https://aonecode.com/google-phone-pizza-shop
+
 
 **/
